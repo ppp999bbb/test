@@ -38,13 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void BattleStart(View view){
         int enemy;
-        State state;
         Intent intent;
         Random rand=new Random();
         enemy=rand.nextInt(1);
 
         if(enemy==0){
-            state=realm.where(State.class).equalTo("name",boss).findFirst();
         }
 
         intent=new Intent(this,Main2Activity.class);
@@ -66,9 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void setInitDate(){
         if(PREFERENCE_INIT==getState()){
-            setEnemyState set=new setEnemyState();
             setInitPlayerState setP=new setInitPlayerState();
-            realm.executeTransaction(set);
             realm.executeTransaction(setP);
 
             setState(PREFERENCE_BOOTED);
