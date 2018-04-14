@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="success">成功</string>
+    <string name="start">戦闘開始</string>
+    <string name="battle">戦う</string>
+    <string name="hit_pint">HP</string>
+    <string name="magic_point">MP</string>
+    <string name="skill_point">SP</string>
+    <string name="status">ステータス</string>
+    <string name="name">Name</string>
+    <string name="equip">装備</string>
+    <string name="weapon_1">武器１</string>
+    <string name="weapon_2">武器２</string>
+    <string name="weapon_3">武器３</string>
+    <string name="equipment_null">装備なし</string>
+</resources>
